@@ -2,11 +2,14 @@ import React from 'react'
 
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import About from './components/About'
+import Contact from './components/Contact';
+import PhotoFlow from './components/PhotoFlow'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Achievements from './components/Achievements'
+import Certifications from './components/Cerifications';
 import Footer from './components/Footer'
+
 
 export default function App() {
   return (
@@ -15,11 +18,12 @@ export default function App() {
       <Navbar />
       <main className="container mx-auto">
         <Hero />
-        <About />
+        <Contact />
         <PhotoFlow />
         <Skills />
         <Projects />
         <Achievements />
+        <Certifications />
       </main>
       <Footer />
     </div>
