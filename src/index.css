@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+
+/* custom */
+html,
+body,
+#root {
+    height: 100%;
+}
+
+:root {
+    --bg: #2a0f1d;
+    --card: #6283c6;
+}
+
+/* Smooth scrolling for anchor nav */
+html {
+    scroll-behavior: smooth;
+}
+
+/* small utility for subtle glass look */
+.glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+}
