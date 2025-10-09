@@ -6,7 +6,7 @@ const skillCategories = [
     {
         title: "Programming",
         skills: [
-            { name: "Python", level: "Advanced" },
+            { name: "Python", level: "Intermediate" },
             { name: "Java", level: "Intermediate" },
             { name: "JavaScript", level: "Intermediate" },
             { name: "C", level: "Intermediate" },
@@ -20,7 +20,7 @@ const skillCategories = [
             { name: "CSS", level: "Advanced" },
             { name: "Tailwind CSS", level: "Intermediate" },
             { name: "React.js", level: "Intermediate" },
-            { name: "Node.js (Basics)", level: "Beginner" },
+            { name: "Node.js", level: "Beginner" },
             { name: "REST APIs", level: "Intermediate" },
         ],
     },
@@ -48,9 +48,9 @@ const skillCategories = [
         title: "Software Engineering Concepts",
         skills: [
             { name: "OOP", level: "Advanced" },
-            { name: "SDLC", level: "Intermediate" },
-            { name: "Agile Methodology", level: "Intermediate" },
-            { name: "Data Structures & Algorithms", level: "Intermediate" },
+            { name: "SDLC", level: "Advanced" },
+            { name: "Agile Methodology", level: "Advanced" },
+            { name: "Data Structures & Algorithms", level: "Advanced" },
             { name: "Problem-Solving", level: "Advanced" },
         ],
     },
@@ -74,9 +74,9 @@ const skillCategories = [
     {
         title: "Cloud & DevOps",
         skills: [
-            { name: "Azure (Basics)", level: "Beginner" },
+            { name: "Azure", level: "Beginner" },
             { name: "Google Cloud", level: "Beginner" },
-            { name: "CI/CD (Basics)", level: "Beginner" },
+            { name: "CI/CD ", level: "Beginner" },
         ],
     },
     {
@@ -108,34 +108,26 @@ const skillCategories = [
         ],
     },
     {
-        title: "Tools",
+        title: "Other Tools",
         skills: [
             { name: "Jupyter Notebook", level: "Intermediate" },
             { name: "Google Colab", level: "Intermediate" },
-            { name: "Visual Studio Code", level: "Advanced" },
-            { name: "Xampp Server", level: "Intermediate" },
             { name: "Excel", level: "Advanced" },
         ],
     },
-    {
-        title: "Concepts",
-        skills: [
-            { name: "Data Structures & Algorithms", level: "Intermediate" },
-            { name: "Problem-Solving", level: "Advanced" },
-        ],
-    },
+
 ];
 
 export default function Skills() {
     return (
-        <section id="skills" className="py-16 px-2">
-            <div className="max-w-6xl">
-                <h2 className="text-2xl font-bold mb-6">Skills</h2>
+        <section id="skills" className="py-16 px-4">
+            <div className="container mx-auto">
+                <h2 className="text-3xl font-bold mb-6">Skills</h2>
 
                 {skillCategories.map((category) => (
                     <div key={category.title} className="mb-10">
                         {/* Category Title */}
-                        <h3 className="text-xl font-semibold mb-4 text-slate-700 border-l-4 border-sky-500 pl-3">
+                        <h3 className="text-xl font-semibold mb-4 text-slate-400 border-l-4 border-sky-500 pl-3">
                             {category.title}
                         </h3>
 

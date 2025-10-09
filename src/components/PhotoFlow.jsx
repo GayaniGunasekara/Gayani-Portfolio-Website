@@ -13,33 +13,35 @@ import img8 from "../assets/img8.jpg";
 import img9 from "../assets/img9.jpg";
 import img10 from "../assets/img10.jpg";
 
-const photos = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10]; // Add all your images here
+const photos = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
 
 const PhotoFlow = () => {
     const [current, setCurrent] = useState(0);
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrent((prev) => (prev + 1) % photos.length); // rotate photos
-        }, 4000); // 4 seconds per photo
+            setCurrent((prev) => (prev + 1) % photos.length);
+        }, 4000);
 
         return () => clearInterval(interval);
     }, []);
 
     return (
-        <div className="relative w-250 h-200 overflow-hidden rounded-lg items-center justify-center">
-            <AnimatePresence>
-                <motion.img
-                    key={current}
-                    src={photos[current]}
-                    alt="Slideshow"
-                    className="absolute w-full h-full object-cover"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 1.2 }} // smooth fade
-                />
-            </AnimatePresence>
+        <div className="flex justify-center">
+            <div className="relative w-[750px] h-[500px] overflow-hidden rounded-lg">
+                <AnimatePresence>
+                    <motion.img
+                        key={current}
+                        src={photos[current]}
+                        alt="Slideshow"
+                        className="absolute w-full h-full object-cover"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 1.2 }}
+                    />
+                </AnimatePresence>
+            </div>
         </div>
     );
 };
