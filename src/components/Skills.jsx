@@ -1,35 +1,166 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+// src/components/Skills.jsx
+import React from "react";
+import { motion } from "framer-motion";
 
-const skillGroups = [
-    ['React', 'JavaScript', 'Tailwind CSS', 'HTML', 'CSS'],
-    ['Flutter', 'Dart', 'Firebase'],
-    ['Python', 'Java', 'C', 'SQL'],
-    ['Node.js', 'Express', 'MySQL', 'PostgreSQL']
-]
+const skillCategories = [
+    {
+        title: "Programming",
+        skills: [
+            { name: "Python", level: "Advanced" },
+            { name: "Java", level: "Intermediate" },
+            { name: "JavaScript", level: "Intermediate" },
+            { name: "C", level: "Intermediate" },
+            { name: "PHP", level: "Beginner" },
+        ],
+    },
+    {
+        title: "Web Development",
+        skills: [
+            { name: "HTML", level: "Advanced" },
+            { name: "CSS", level: "Advanced" },
+            { name: "Tailwind CSS", level: "Intermediate" },
+            { name: "React.js", level: "Intermediate" },
+            { name: "Node.js (Basics)", level: "Beginner" },
+            { name: "REST APIs", level: "Intermediate" },
+        ],
+    },
+    {
+        title: "Mobile Development",
+        skills: [{ name: "Flutter", level: "Intermediate" }],
+    },
+    {
+        title: "Databases",
+        skills: [
+            { name: "MySQL", level: "Advanced" },
+            { name: "Firebase", level: "Intermediate" },
+            { name: "PostgreSQL", level: "Beginner" },
+        ],
+    },
+    {
+        title: "Version Control Tools",
+        skills: [
+            { name: "Git", level: "Advanced" },
+            { name: "GitHub", level: "Advanced" },
+            { name: "Git Bash", level: "Intermediate" },
+        ],
+    },
+    {
+        title: "Software Engineering Concepts",
+        skills: [
+            { name: "OOP", level: "Advanced" },
+            { name: "SDLC", level: "Intermediate" },
+            { name: "Agile Methodology", level: "Intermediate" },
+            { name: "Data Structures & Algorithms", level: "Intermediate" },
+            { name: "Problem-Solving", level: "Advanced" },
+        ],
+    },
+    {
+        title: "Development Tools",
+        skills: [
+            { name: "Visual Studio Code", level: "Advanced" },
+            { name: "IntelliJ IDEA", level: "Intermediate" },
+            { name: "Xampp Server", level: "Intermediate" },
+            { name: "Arduino IDE", level: "Intermediate" },
+        ],
+    },
+    {
+        title: "UI/UX & Design",
+        skills: [
+            { name: "Figma", level: "Intermediate" },
+            { name: "Draw.io", level: "Intermediate" },
+            { name: "Canva", level: "Advanced" },
+        ],
+    },
+    {
+        title: "Cloud & DevOps",
+        skills: [
+            { name: "Azure (Basics)", level: "Beginner" },
+            { name: "Google Cloud", level: "Beginner" },
+            { name: "CI/CD (Basics)", level: "Beginner" },
+        ],
+    },
+    {
+        title: "Embedded Systems",
+        skills: [
+            { name: "IoT", level: "Intermediate" },
+            { name: "Arduino Programming", level: "Advanced" },
+            { name: "Sensor Integration", level: "Intermediate" },
+        ],
+    },
+    {
+        title: "Data Analysis & Manipulation",
+        skills: [
+            { name: "NumPy", level: "Intermediate" },
+            { name: "Pandas", level: "Intermediate" },
+        ],
+    },
+    {
+        title: "Data Visualization",
+        skills: [
+            { name: "Looker Studio", level: "Intermediate" },
+            { name: "Tableau", level: "Beginner" },
+        ],
+    },
+    {
+        title: "Machine Learning",
+        skills: [
+            { name: "Scikit-learn (Regression, Classification, Clustering)", level: "Beginner" },
+        ],
+    },
+    {
+        title: "Tools",
+        skills: [
+            { name: "Jupyter Notebook", level: "Intermediate" },
+            { name: "Google Colab", level: "Intermediate" },
+            { name: "Visual Studio Code", level: "Advanced" },
+            { name: "Xampp Server", level: "Intermediate" },
+            { name: "Excel", level: "Advanced" },
+        ],
+    },
+    {
+        title: "Concepts",
+        skills: [
+            { name: "Data Structures & Algorithms", level: "Intermediate" },
+            { name: "Problem-Solving", level: "Advanced" },
+        ],
+    },
+];
 
 export default function Skills() {
     return (
-        <section id="skills" className="py-12">
-            <h2 className="text-2xl font-bold mb-6">Skills</h2>
+        <section id="skills" className="py-16 px-2">
+            <div className="max-w-6xl">
+                <h2 className="text-2xl font-bold mb-6">Skills</h2>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                {skillGroups.flat().map((s, idx) => (
-                    <motion.div
-                        key={s}
-                        initial={{ y: 8, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{ delay: idx * 0.04 }}
-                        className="p-4 glass rounded-lg flex items-center justify-between"
-                    >
-                        <div>
-                            <div className="font-medium">{s}</div>
-                            <div className="text-xs text-slate-400">Proficient</div>
+                {skillCategories.map((category) => (
+                    <div key={category.title} className="mb-10">
+                        {/* Category Title */}
+                        <h3 className="text-xl font-semibold mb-4 text-slate-700 border-l-4 border-sky-500 pl-3">
+                            {category.title}
+                        </h3>
+
+                        {/* Skill Boxes */}
+                        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                            {category.skills.map((skill, idx) => (
+                                <motion.div
+                                    key={skill.name}
+                                    initial={{ y: 8, opacity: 0 }}
+                                    animate={{ y: 0, opacity: 1 }}
+                                    transition={{ delay: idx * 0.05 }}
+                                    className="p-4 glass rounded-lg flex items-center justify-between bg-white shadow-md hover:shadow-lg transition duration-300"
+                                >
+                                    <div>
+                                        <div className="font-medium">{skill.name}</div>
+                                        <div className="text-xs text-slate-500">
+                                            {skill.level}
+                                        </div>
+                                    </div>
+                                </motion.div>
+                            ))}
                         </div>
-                        <div className="text-xs px-3 py-1 rounded bg-slate-700 text-slate-200">★ ★ ★ ★</div>
-                    </motion.div>
+                    </div>
                 ))}
             </div>
         </section>
-    )
+    );
 }
