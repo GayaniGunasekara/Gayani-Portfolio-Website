@@ -13,7 +13,10 @@ export default {
             container: {
                 center: true,
                 padding: '1.25rem'
-            }
+            },
+            fontFamily: {
+                sans: ['Poppins', 'sans-serif'], // your global font
+            },
         },
     },
     plugins: [],

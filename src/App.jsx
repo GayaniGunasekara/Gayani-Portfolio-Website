@@ -8,7 +8,9 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Achievements from './components/Achievements'
 import Certifications from './components/Cerifications';
+import VolunteerExperience from './components/Voluteer';
 import Footer from './components/Footer'
+
 
 
 export default function App() {
@@ -24,6 +26,7 @@ export default function App() {
         <Projects />
         <Achievements />
         <Certifications />
+        <VolunteerExperience />
       </main>
       <Footer />
     </div>
