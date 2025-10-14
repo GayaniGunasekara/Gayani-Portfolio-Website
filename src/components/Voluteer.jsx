@@ -4,7 +4,7 @@ import React from 'react'
 const volunteerExperiences = [
     {
         title: 'Committee Member 2024/25 - IEEE WIE Student Branch Affinity Group of Sabaragamuwa University of Sri Lanka',
-        link: 'https://www.ieee.org/membership/women/index.html' // example link
+        link: 'https://www.linkedin.com/posts/ieee-wie-student-branch-affinity-group-of-susl_ieee-wie-ieeewie-activity-7242180455402258434-WfT3?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEL6RiABQSW_ItwUdJrRczRXpnO7Cj36BKo' // example link
     },
     {
         title: 'Mathematics Teaching - Sasnaka Sansada - Ganitha Sawiya (2021–Present)',

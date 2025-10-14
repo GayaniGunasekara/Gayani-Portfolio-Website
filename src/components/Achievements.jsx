@@ -3,24 +3,24 @@ import React from 'react'
 
 const achievements = [
     {
-        title: 'NBQSA Winner (National ICT Awards) — 2025',
-        link: 'https://nbqsa.org/' // replace with your actual link
+        title: ' "National ICT Awards -NBQSA 2025 - MERIT Award - Tertiary Student Project (Technology) in Student Category "',
+        link: 'https://drive.google.com/file/d/1TTJPep2rD7-s2CsDUkptAlGhx7GEwzJG/view?usp=sharing' // replace with your actual link
     },
     {
-        title: 'InnoServe Awards 2025 — Participation',
-        link: 'https://www.innoserveawards.org/'
+        title: 'InnoServe Awards 2025 — Participation Nomination',
+        link: 'https://innoserve.tca.org.tw/en/'
     },
     {
-        title: 'HackElite finalist',
-        link: 'https://hackelite.com/'
+        title: 'HackElite — Finalist',
+        link: 'https://drive.google.com/file/d/1-7Bd-WmS-VUHHxM6-n87gCI25HTC1oM5/view?usp=sharing'
     },
     {
-        title: 'PearlHack Semi-finalist',
-        link: 'https://pearlhack.com/'
+        title: 'PearlHack — Semi-Finalist',
+        link: 'https://www.linkedin.com/posts/gayanigunasekara_excited-to-share-that-innovatehers-has-activity-7283353005733593089-9oHF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEL6RiABQSW_ItwUdJrRczRXpnO7Cj36BKo'
     },
     {
         title: 'Idealize 2025 — Proposal Winner',
-        link: 'https://idealize.lk/'
+        link: 'https://www.linkedin.com/posts/gayanigunasekara_idealize2025-ridesync-innovation-activity-7364231896920190977-gGYQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEL6RiABQSW_ItwUdJrRczRXpnO7Cj36BKo'
     }
 ]
 
