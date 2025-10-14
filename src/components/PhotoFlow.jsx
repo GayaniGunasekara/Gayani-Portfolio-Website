@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 
-// Import your images
+// Import images
 import img1 from "../assets/img1.jpg";
 import img2 from "../assets/img2.jpg";
 import img3 from "../assets/img3.jpg";
@@ -17,36 +17,41 @@ import img12 from "../assets/img12.jpg";
 import img13 from "../assets/img13.jpg";
 import img14 from "../assets/img14.jpg";
 import img15 from "../assets/img15.jpg";
+import img16 from "../assets/img16.jpg";
+import img17 from "../assets/img17.jfif";
 
-const photos = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15];
+
+const photos = [
+    img1, img2, img3, img4, img5, img6, img7, img8,
+    img9, img10, img11, img12, img13, img14, img15, img16, img17
+];
 
 const PhotoFlow = () => {
-    const [current, setCurrent] = useState(0);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrent((prev) => (prev + 1) % photos.length);
-        }, 4000);
-
-        return () => clearInterval(interval);
-    }, []);
+    const stripWidth = photos.length * 504; // image width (500) + margin (2px * 2)
 
     return (
-        <div className="flex justify-center">
-            <div className="relative w-[750px] h-[500px] overflow-hidden rounded-lg">
-                <AnimatePresence>
-                    <motion.img
-                        key={current}
-                        src={photos[current]}
-                        alt="Slideshow"
-                        className="absolute w-full h-full object-cover"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 1.2 }}
+        <div className="overflow-hidden w-full bg-black flex justify-center py-4">
+            <motion.div
+                className="flex"
+                animate={{ x: [0, -stripWidth] }}
+                transition={{
+                    x: {
+                        repeat: Infinity,
+                        repeatType: "loop",
+                        duration: 120, // ⏳ slower speed — increase this for even smoother flow
+                        ease: "linear"
+                    }
+                }}
+            >
+                {[...photos, ...photos].map((photo, index) => (
+                    <img
+                        key={index}
+                        src={photo}
+                        alt={`photo-${index}`}
+                        className="w-[500px] h-[350px] object-cover mx-2 rounded-lg"
                     />
-                </AnimatePresence>
-            </div>
+                ))}
+            </motion.div>
         </div>
     );
 };
