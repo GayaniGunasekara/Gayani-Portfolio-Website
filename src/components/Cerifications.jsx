@@ -167,20 +167,19 @@ const Certifications = () => {
         const timer = setInterval(() => {
             setIndex((prev) => (prev + 1) % certificates.length);
         }, 6000); // 6 seconds per certificate
-
         return () => clearInterval(timer);
     }, []);
 
     const currentCert = certificates[index];
 
     return (
-        <section id="certifications" className="py-20 text-slate-100 flex flex-col ">
-            {/* ======= Heading OUTSIDE the black box ======= */}
-            <h2 className="text-2xl font-bold mb-3">Certifications</h2>
+        <section id="certifications" className="py-20 text-slate-100 flex flex-col">
+            {/* Heading */}
+            <h2 className="text-2xl font-bold mb-6 text-center">Certifications</h2>
 
-            {/* ======= Black Box Container ======= */}
+            {/* Black Box Container */}
             <div className="w-full flex items-center justify-center">
-                <div className="bg-slate-900 rounded-2xl shadow-2xl p-10 w-full max-w-6xl flex items-center justify-center">
+                <div className="bg-slate-900 rounded-2xl shadow-2xl p-6 md:p-10 w-full max-w-6xl flex items-center justify-center">
                     <AnimatePresence mode="wait">
                         <motion.div
                             key={index}
@@ -188,19 +187,19 @@ const Certifications = () => {
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: -50 }}
                             transition={{ duration: 1 }}
-                            className="flex bg-slate-800 rounded-xl shadow-xl overflow-hidden max-w-4xl w-full"
+                            className="flex flex-col md:flex-row bg-slate-800 rounded-xl shadow-xl overflow-hidden w-full max-w-4xl"
                         >
-                            {/* ======= Left: Certificate Image ======= */}
-                            <div className="w-1/2 flex items-center">
+                            {/* Left: Certificate Image */}
+                            <div className="md:w-1/2 w-full flex items-center justify-center p-4 md:p-0">
                                 <img
                                     src={currentCert.image}
                                     alt={currentCert.name}
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-auto max-h-[400px] object-contain rounded-lg"
                                 />
                             </div>
 
-                            {/* ======= Right: Description ======= */}
-                            <div className="w-1/2 p-6 flex flex-col justify-center">
+                            {/* Right: Description */}
+                            <div className="md:w-1/2 w-full p-6 flex flex-col justify-center text-center md:text-left">
                                 <h3 className="text-xl font-semibold mb-1">{currentCert.name}</h3>
                                 <h4 className="text-lg font-bold mb-2">{currentCert.institute}</h4>
                                 <p className="mb-2">
