@@ -19,6 +19,9 @@ import cert13 from "../assets/certificates/cert13.png";
 import cert14 from "../assets/certificates/cert14.png";
 import cert15 from "../assets/certificates/cert15.png";
 import cert16 from "../assets/certificates/cert16.jpeg";
+import cert17 from "../assets/certificates/cert17.jpeg";
+import cert18 from "../assets/certificates/cert18.jpeg";
+import cert19 from "../assets/certificates/cert19.jpeg";
 
 const certificates = [
     {
