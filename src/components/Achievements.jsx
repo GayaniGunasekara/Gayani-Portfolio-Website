@@ -3,7 +3,7 @@ import React from 'react'
 
 const achievements = [
     {
-        title: ' National ICT Awards -NBQSA 2025 - MERIT Award - Tertiary Student Project (Technology) in Student Category ',
+        title: 'National ICT Awards -NBQSA 2025 - MERIT Award - Tertiary Student Project (Technology) in Student Category',
         link: 'https://drive.google.com/file/d/1TTJPep2rD7-s2CsDUkptAlGhx7GEwzJG/view?usp=sharing'
     },
     {
