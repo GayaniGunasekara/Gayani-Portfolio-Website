@@ -5,7 +5,7 @@ import Skills from './Skills'
 const volunteerExperiences = [
     {
         title: 'Committee Member 2024/25 - IEEE WIE Student Branch Affinity Group of Sabaragamuwa University of Sri Lanka',
-        Skills: [
+        contrib: [
             "Assisted in organizing and coordinating technical workshops and networking events for 100+ students.",
             "Collaborated with the committee to manage event logistics, coordination, and outreach activities."
         ],
@@ -13,7 +13,7 @@ const volunteerExperiences = [
     },
     {
         title: 'Mathematics Teaching - Sasnaka Sansada - Ganitha Sawiya (2021–Present)',
-        Skills: [
+        contrib: [
             " Conduct mathematics lessons for school students as part of a community education initiative.",
             "Enhanced communication, interactive teaching, leadership, and collaboration skills through continuous volunteer engagement."
         ],
@@ -38,6 +38,11 @@ export default function VolunteerExperience() {
                         <div className="font-medium text-slate-200 hover:underline">
                             {v.title}
                         </div>
+                        <ul className="list-disc list-inside text-sm text-slate-400 mt-1 space-y-1">
+                            {p.contrib.map((item, idx) => (
+                                <li key={idx}>{item}</li>
+                            ))}
+                        </ul>
                     </a>
                 ))}
             </div>
