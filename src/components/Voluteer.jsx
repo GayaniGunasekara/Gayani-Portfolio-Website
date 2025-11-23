@@ -1,13 +1,22 @@
 // src/components/VolunteerExperience.jsx
 import React from 'react'
+import Skills from './Skills'
 
 const volunteerExperiences = [
     {
         title: 'Committee Member 2024/25 - IEEE WIE Student Branch Affinity Group of Sabaragamuwa University of Sri Lanka',
+        contrib: [
+            "Assisted in organizing and coordinating technical workshops and networking events for 100+ students.",
+            "Collaborated with the committee to manage event logistics, coordination, and outreach activities."
+        ],
         link: 'https://www.linkedin.com/posts/ieee-wie-student-branch-affinity-group-of-susl_ieee-wie-ieeewie-activity-7242180455402258434-WfT3?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEL6RiABQSW_ItwUdJrRczRXpnO7Cj36BKo' // example link
     },
     {
         title: 'Mathematics Teaching - Sasnaka Sansada - Ganitha Sawiya (2021–Present)',
+        contrib: [
+            " Conduct mathematics lessons for school students as part of a community education initiative.",
+            "Enhanced communication, interactive teaching, leadership, and collaboration skills through continuous volunteer engagement."
+        ],
         link: 'https://www.sasnaka.org/' // example link
     }
 ]

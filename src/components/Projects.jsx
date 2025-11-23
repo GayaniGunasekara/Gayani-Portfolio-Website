@@ -60,7 +60,7 @@ const projects = [
     }
     ,
     {
-        name: ' Weather Application',
+        name: '  SkyPulse',
         desc: ' A desktop app to provide real-time weather information by city, including temperature, humidity, wind,speed, pressure, weather description, and local time, all within a user-friendly graphical interface.(Individual Project)',
         contrib: [
             'Designed and implemented a clean GUI using Tkinter and Pillow (PIL).',

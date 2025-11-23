@@ -157,6 +157,20 @@ const certificates = [
         skills: "Data Science",
         date: "Issued: October 2025",
     },
+    {
+        image: cert20,
+        name: " Vision to Value - Business Analysis Experience Program ",
+        institute: "IEEE Young Professionals Sri Lanka",
+        skills: "Business Analysis, Requirement Gathering, Stakeholder Management,  BA Tools",
+        date: "Issued: October 2025",
+    },
+    {
+        image: cert21,
+        name: " Trello Essential Training ",
+        institute: "LinkedIn Learning",
+        skills: "Trello, Project Management, Collaboration",
+        date: "Issued: October 2025",
+    },
 
 ];
 

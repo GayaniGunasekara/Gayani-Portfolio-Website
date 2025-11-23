@@ -55,6 +55,20 @@ const skillCategories = [
         ],
     },
     {
+        title: "Project Management & Collaboration:",
+        skills: [
+            { name: "Jira", level: "Intermediate" },
+            { name: "Trello", level: "Intermediate" },
+            { name: "Confluence", level: "Intermediate" },
+            { name: "Google Workspace", level: "Advanced" },
+            { name: "Stakeholder Communication", Level: "Advanced" },
+            { name: "Process Modeling", Level: "Intermediate" },
+            { name: "Requirement Gathering", Level: "Advanced" },
+            { name: "Documentation", Level: "Advanced" }
+
+        ]
+    },
+    {
         title: "Development Tools",
         skills: [
             { name: "Visual Studio Code", level: "Advanced" },
