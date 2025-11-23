@@ -22,7 +22,7 @@ export default function Hero() {
                         transition={{ delay: 0.3 }}
                         className="mt-4 text-2xl  text-slate-300 "
                     >
-                        Enthusiastic IT undergraduate passionate about Software Development, Data Science, AI, and ML. Skilled in Java, Python, and modern tech tools, with a creative and analytical mindset. Eager to contribute to innovative projects and gain real-world experience through an internship.
+                        Enthusiastic IT undergraduate passionate about Software Development, Data Science,and Software Project Management. Skilled in Java, Python, and modern tech tools, with a creative and analytical mindset. Eager to contribute to innovative projects and gain real-world experience through an internship.
                     </motion.p>
                 </div>
 

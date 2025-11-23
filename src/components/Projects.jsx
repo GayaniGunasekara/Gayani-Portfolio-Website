@@ -18,8 +18,9 @@ const projects = [
     },
     {
         name: 'RideSync',
-        desc: 'Full Stack Web platform for connecting motor servicing and Repair Centers and Vehicle Owners.(Ongoing - Individual Project)',
+        desc: 'Full Stack Web platform for connecting motor servicing and Repair Centers and Vehicle Owners.(Ongoing - Individual Project developing for Ajith Motor Works-padukka )',
         contrib: [
+            'Stakeholder Communication, Requirement Gathering and Analysis, Innovative Solution Designing.',
             'Overall Project Design, Planning and development.',
             'Designed the UI/UX in Figma and created interactive Prototypes.',
             'Implemented the frontend using React.',
@@ -32,21 +33,22 @@ const projects = [
     },
     {
         name: 'PureHarvest',
-        desc: 'Business platform for organic productions (Ongoing - Individual Project)',
+        desc: 'Business platform for organic productions (Individual Project)',
         contrib: [
+            'Innovative Solution Designing.',
             'Overall Project Design, Planning and development.',
             'Designed the UI/UX in Figma and created interactive Prototypes.',
             'Set up full-stack architecture with React and Node.js.',
-            'Handling MySQL–Firebase integration for hybrid data flow.',
+            'Handling MySQL integration for hybrid data flow.',
             'Implemented user authentication and dashboard UI.'
         ],
-        tech: ['React', 'Node.js', 'MySQL', 'Firebase'],
+        tech: ['React', 'Node.js', 'MySQL', 'Figma'],
         github: 'https://github.com/GayaniGunasekara/PureHarvest',
         demo: 'https://www.figma.com/proto/SJMJzPcnb8DO128WMpx2R9/PureHarvest'
     },
     {
-        name: 'Employee Attrition ML',
-        desc: 'an end-to-end solution to predict employee attrition, performing an end-to-end pipeline including EDA,preprocessing, model training, and deployment via a Streamlit web app for real-time predictions ( Individual Project).',
+        name: 'PredictHR',
+        desc: 'An end-to-end solution to predict employee attrition, performing an end-to-end pipeline including EDA,preprocessing, model training, and deployment via a Streamlit web app for real-time predictions ( Individual Project).',
         contrib: [
             'Performed data preprocessing and feature engineering.',
             'Trained models using scikit-learn (Logistic Regression, Random Forest).',
@@ -54,12 +56,12 @@ const projects = [
         ],
         tech: ['Python', 'scikit-learn', 'Streamlit', 'pandas', 'numpy', 'mataplotlib', 'Jupyter Notebook'],
         github: 'https://github.com/GayaniGunasekara/Employee_Attrition_Prediction_ML_Project',
-        demo: 'https://github.com/GayaniGunasekara/Employee_Attrition_Prediction_ML_Project'
+        demo: 'https://www.linkedin.com/posts/gayanigunasekara_machinelearning-python-streamlit-activity-7379231778257080320-6AMO?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEL6RiABQSW_ItwUdJrRczRXpnO7Cj36BKo'
     }
     ,
     {
         name: ' Weather Application',
-        desc: ' AS desktop app to provide real-time weather information by city, including temperature, humidity, wind,speed, pressure, weather description, and local time, all within a user-friendly graphical interface.(Individual Project)',
+        desc: ' A desktop app to provide real-time weather information by city, including temperature, humidity, wind,speed, pressure, weather description, and local time, all within a user-friendly graphical interface.(Individual Project)',
         contrib: [
             'Designed and implemented a clean GUI using Tkinter and Pillow (PIL).',
             'Integrated OpenWeatherMap API for accurate weather data retrieval.',
@@ -67,8 +69,8 @@ const projects = [
             'Optimized code for fast and smooth real-time updates.'
         ],
         tech: ['Python', 'Tkinter', 'Pillow', 'Requests', 'Geopy', 'TimezoneFinder', 'pytz', 'OpenWeatherMap API'],
-        github: 'https://github.com/GayaniGunasekara/Employee_Attrition_Prediction_ML_Project',
-        demo: 'https://github.com/GayaniGunasekara/Employee_Attrition_Prediction_ML_Project'
+        github: 'https://github.com/GayaniGunasekara/Weather_Application',
+        demo: 'https://www.linkedin.com/posts/gayanigunasekara_python-tkinter-weatherapp-activity-7373390923268845568-42nx?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEL6RiABQSW_ItwUdJrRczRXpnO7Cj36BKo'
     }
     ,
     {
@@ -81,7 +83,7 @@ const projects = [
             "Ensured the UI was simple, structured, and user-friendly for administrative staff."
         ],
         tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-        github: "https://github.com/GayaniGunasekara/StudentColoursManagementSystem", // replace with actual repo if different
+        github: "https://github.com/Menuka7865/Student-s-colors-management-System",
         demo: "#"
     },
     {
@@ -105,7 +107,7 @@ const projects = [
             "Git",
             "GitHub"
         ],
-        github: "https://github.com/GayaniGunasekara/HaldummullaVetPortal", // replace with actual repo if available
+        github: "https://github.com/Menuka7865/Haldummulla-Veterinary-Services-Web-Portal-", // replace with actual repo if available
         demo: "#"
     },
     {
@@ -118,8 +120,8 @@ const projects = [
             'Applied OOP principles to ensure modular, maintainable code structure.'
         ],
         tech: ['Java', 'MySQL'],
-        github: 'https://github.com/GayaniGunasekara/LibraryManagementSystem', // update link if needed
-        demo: '#'
+        github: 'https://github.com/GayaniGunasekara/Library-Management-System', // update link if needed
+        demo: 'https://www.linkedin.com/posts/gayanigunasekara_java-mysql-oop-activity-7246776778340360192--Q2l?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEL6RiABQSW_ItwUdJrRczRXpnO7Cj36BKo'
     },
     {
         name: 'To-Do List Application',
@@ -131,11 +133,11 @@ const projects = [
             'Used localStorage for persistent data saving.'
         ],
         tech: ['HTML', 'CSS', 'JavaScript'],
-        github: 'https://github.com/GayaniGunasekara/ToDoListApp', // update link if needed
-        demo: '#'
+        github: 'https://github.com/GayaniGunasekara/To-Do-List', // update link if needed
+        demo: 'https://www.linkedin.com/posts/gayanigunasekara_javascript-selftaughtdev-github-activity-7323417956112109568-oB2M?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEL6RiABQSW_ItwUdJrRczRXpnO7Cj36BKo'
     },
     {
-        name: 'Bakery Shop Website',
+        name: 'Heaven Delight Bakes website',
         desc: 'A responsive website showcasing bakery products with smooth navigation and engaging UI components.( Individual Project)',
         contrib: [
             'Designed and developed the website layout and visual theme.',
@@ -144,8 +146,8 @@ const projects = [
             'Optimized website performance for faster loading and seamless browsing.'
         ],
         tech: ['HTML', 'CSS', 'JavaScript'],
-        github: 'https://github.com/GayaniGunasekara/BakeryWebsite', // update link if needed
-        demo: '#'
+        github: 'https://github.com/GayaniGunasekara/Heaven-Delight-Bakes', // update link if needed
+        demo: 'https://www.linkedin.com/posts/gayanigunasekara_webdesign-webdevelopment-studentwork-activity-7235249655310114817-pHOA?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEL6RiABQSW_ItwUdJrRczRXpnO7Cj36BKo'
     }
 ]
 
